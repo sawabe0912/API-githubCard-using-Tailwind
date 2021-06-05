@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - API Github Card in Tailwind</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.1.2/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<body class="bg-purple-600 bg-opacity-25">
+
+  <h1 class="text-center text-2xl m-8">Find friends on Github😊</h1>
+  <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center" role="alert" id="alertUserduplicate">
+     You already created this person's Github card!!
+  </div>
+  <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative text-center" role="alert" id="alertnoUser">
+     You must input user!
+  </div>
+</div>
+
+
+ <div class="w-full max-w-sm" id="inputchunk">
+  <div class="flex items-center border-b border-teal-500 py-2">
+    <input class="appearance-none bg-transparent border-none w-full text-gray-700 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Username" aria-label="Full name" id="username">
+    <button class="flex-shrink-0 bg-teal-500 hover:bg-teal-700 border-teal-500 hover:border-teal-700 text-sm border-4 text-black py-1 px-2 rounded" type="button" onclick="getUsername()" id="#button">
+      Create a Card
+    </button>
+   </div>   
+</div>
+  
+<div id="cardContainer" class="grid grid-cols-5 gap-4 ml-2">
+</div>
+   
+
+</body>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
